@@ -1,0 +1,265 @@
+/* src/DetailVolunteer.css */
+
+/* --- Variabel Global (Berdasarkan Warna di Kode Anda) --- */
+:root {
+    --color-page-bg: #fbf0f0; /* Frame-21 */
+    --color-primary: #100e2f;    /* Frame-56, Judul */
+    --color-row-bg: #ffffff; /* Menggantikan rectangle yang tidak memiliki warna */
+    --color-button: #17143a; /* Rectangle-21 */
+    --color-text-light: #ffffff;
+    --color-text-dark: #000000;
+}
+
+/* Container Utama */
+.detail-page-wrapper {
+    background: var(--color-page-bg);
+    min-height: 100vh;
+    /* Memberi ruang di bagian atas karena header akan dibuat fixed */
+    padding-top: 127px; 
+}
+
+.content-container {
+    max-width: 1600px; /* Lebar Konten Maksimal */
+    margin: 0 auto;
+    padding: 0 40px 60px 40px; 
+}
+
+/* --- 1. HEADER / NAVIGASI (Menggantikan .frame-56) --- */
+.main-header {
+    background: var(--color-primary);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed; /* Tetap di atas */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 127px; /* Tinggi sesuai desain asli */
+}
+
+.header-logo-wrapper {
+    /* Menggantikan .gemini-generated-image-aebjc-0-aebjc-0-aebj-removebg-preview-2 */
+    display: flex;
+    align-items: center;
+    height: 100%; 
+}
+
+.header-logo {
+    /* Logo dibuat proporsional di dalam header */
+    width: auto;
+    height: 150px; 
+    margin-left: -150px; /* Geser logo ke kiri seperti desain asli */
+    object-fit: contain;
+}
+
+.header-nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    /* Kontrol navigasi agar tidak terlalu jauh ke kanan */
+    margin-right: 50px; 
+}
+
+.header-nav a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* --- 2. JUDUL HALAMAN UTAMA --- */
+.main-title {
+    /* Menggantikan .profil-volunteer */
+    color: var(--color-primary);
+    text-align: center;
+    font-family: 'Poppins-ExtraBold', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    /* Menggantikan .belajar-ceria-untuk-masa-depan */
+    color: var(--color-primary);
+    text-align: center;
+    font-family: 'Poppins-MediumItalic', sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+/* --- 3. SUMMARY (GAMBAR & DESKRIPSI) --- */
+.kegiatan-summary {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+
+.summary-image-wrapper {
+    /* Menggantikan .image-13 */
+    flex-shrink: 0; 
+    width: 545px; 
+    height: 366px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.summary-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.summary-description {
+    /* Menggantikan .program-ini-mengajak-relawan... */
+    color: var(--color-primary);
+    text-align: justify; /* Lebih rapi daripada center */
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.4;
+    flex-grow: 1;
+    max-width: 892px; /* Lebar sesuai desain asli */
+}
+
+/* --- 4. DETAIL DATA (Menggantikan Group-18, Rectangle-16, dll.) --- */
+.kegiatan-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Jarak antar baris */
+}
+
+.detail-row {
+    /* Menggantikan Rectangle-16 yang tidak memiliki warna background */
+    background: var(--color-row-bg); 
+    padding: 25px 50px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Ukuran tinggi baris sesuai desain asli (~112px) */
+    min-height: 112px;
+    width: 100%;
+}
+
+.detail-label, .detail-value {
+    color: var(--color-text-dark);
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 40px; /* Ukuran font sesuai desain asli */
+    font-weight: 500;
+}
+
+.detail-label {
+    /* Agar label berada di kiri */
+    flex-basis: 60%;
+    text-align: left;
+}
+
+.detail-value {
+    /* Agar nilai di kanan */
+    flex-basis: 40%;
+    text-align: right;
+}
+
+/* --- 5. TOMBOL KEMBALI --- */
+.button-footer {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.back-button {
+    /* Menggantikan rectangle-21 dan .kembali */
+    background: var(--color-button);
+    color: var(--color-text-light);
+    border-radius: 10px;
+    width: 321px;
+    height: 92px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background: #2a2559;
+}
+
+/* --- RESPONSIVITAS --- */
+@media (max-width: 1300px) {
+    .kegiatan-summary {
+        /* Pindah ke layout kolom di layar menengah */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .summary-image-wrapper, .summary-description {
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-title {
+        font-size: 50px;
+    }
+    .detail-label, .detail-value {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        height: 80px;
+    }
+    .detail-page-wrapper {
+        padding-top: 100px;
+    }
+    .header-nav {
+        gap: 15px;
+    }
+    .header-nav a {
+        font-size: 16px;
+    }
+    .summary-image-wrapper {
+        height: 250px;
+    }
+    .summary-description {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-title {
+        font-size: 36px;
+    }
+    .tagline {
+        font-size: 20px;
+    }
+    .detail-row {
+        /* Pindah ke layout kolom di mobile */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 25px;
+        min-height: 80px;
+    }
+    .detail-label, .detail-value {
+        font-size: 20px;
+        width: 100%;
+        text-align: left;
+    }
+    .detail-value {
+        margin-top: 5px;
+        font-weight: 700;
+    }
+}

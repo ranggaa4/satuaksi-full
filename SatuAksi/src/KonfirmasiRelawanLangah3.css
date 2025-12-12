@@ -1,0 +1,306 @@
+/* =======================================
+   KONFIRMASI LANGKAH 3.CSS
+   (SINKRON dengan JSX baru)
+======================================= */
+
+/* --- Dasar Global dan Wrapper --- */
+.daftar-relawan-page {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    min-height: 100vh;
+}
+.main-content-wrapper {
+    max-width: 1529px;
+    margin: 40px auto;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.card-shadow {
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+    padding: 40px;
+    border: 1px solid #E0E0E0;
+}
+
+/* --- JUDUL UTAMA --- */
+.title-section {
+    max-width: 1529px;
+    margin: 0 auto;
+    padding: 60px 50px 30px;
+}
+.daftar-jadi-relawan-kami {
+    color: #17143a;
+    font-weight: 700;
+    font-size: 56px; 
+    margin-bottom: 10px;
+}
+.subtitle-text {
+    color: #676767;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* --- PROGRAM INFO CARD --- */
+.info-card-program {
+    background-color: #e3e3e3; 
+    border: 3px solid #70baff; 
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 959px;
+    margin: 0 auto;
+}
+.info-card-program .checkmark {
+    font-size: 30px;
+    color: #28A745;
+    flex-shrink: 0;
+}
+.anda-sedang-mendaftar-untuk-program {
+    font-size: 18px;
+    color: #000000;
+}
+.aksi-bersih-lingkungan {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1e1e1e;
+}
+
+/* --- STEPPER BAR --- */
+.stepper-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    padding: 0 10px;
+}
+.stepper-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    right: 10%;
+    height: 4px;
+    background-color: #E0E0E0;
+    z-index: 5;
+}
+.stepper-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 10;
+    background-color: white; /* Untuk menutupi garis */
+    padding: 0 10px;
+}
+.stepper-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    background-color: #CCCCCC;
+    z-index: 10;
+}
+
+/* Status Stepper */
+.completed-step .stepper-circle {
+    background: #28A745;
+    font-size: 32px;
+}
+.completed-step .stepper-label {
+    color: #333;
+}
+.active-step .stepper-circle {
+    background: #70baff;
+    border: 3px solid #007BFF;
+}
+.active-step .stepper-label {
+    color: #007BFF;
+}
+.stepper-label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* --- REVIEW DATA CARD --- */
+.review-card-wrapper {
+    margin: 0 50px;
+}
+.tinjau-ulang-data-anda {
+    color: #17143a;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.review-data-grid {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    gap: 50px;
+}
+.line-separator {
+    background-color: #9a9a9a;
+    width: 3px;
+    height: 100%;
+    min-height: 700px;
+}
+.review-column-left, .review-column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Review Field Styling */
+.review-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.review-label {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+}
+.review-value-box {
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    padding: 15px 25px;
+}
+.review-value {
+    color: #333; 
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Styling Khusus Kanan */
+.divisi-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #b8dcfe;
+    border-radius: 20px;
+    border: 3px solid #70baff;
+    padding: 15px 25px;
+}
+.divisi-box .checkmark {
+    width: 28px;
+    height: 28px;
+    color: #000000;
+}
+.motivasi-box {
+    background: #ffffff;
+    border-radius: 15px;
+    border: 3px solid #b8dcfe;
+    padding: 20px;
+    min-height: 200px;
+    font-size: 15px;
+    color: #9a9a9a;
+    line-height: 1.6;
+}
+
+/* --- CHECKBOX PERSETUJUAN --- */
+.agreement-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.agreement-checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.agreement-checkbox {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+.agreement-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+
+/* --- TOMBOL NAVIGASI --- */
+.button-group-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1529px;
+    padding: 0 50px;
+    margin: 50px auto;
+}
+.button-kembali, .button-lanjut {
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: none;
+}
+.button-kembali {
+    background: #9a9a9a; 
+    color: #ffffff;
+}
+.button-lanjut {
+    background: #70baff;
+    color: #ffffff;
+}
+.button-lanjut:disabled {
+    background: #b8dcfe;
+    cursor: not-allowed;
+}
+
+
+/* --- Responsif (Mobile View) --- */
+@media (max-width: 1000px) {
+    .review-data-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .line-separator {
+        display: none;
+    }
+    .button-group-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info-card-program {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .title-section, .main-content-wrapper, .button-group-wrapper {
+        padding: 0 20px;
+    }
+    .daftar-jadi-relawan-kami {
+        font-size: 36px;
+    }
+    .review-card-wrapper {
+        padding: 20px;
+        margin: 0;
+    }
+    .stepper-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .stepper-section::before {
+        display: none;
+    }
+}

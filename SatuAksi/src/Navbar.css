@@ -1,0 +1,97 @@
+/* =============================== */
+/* 🔥 STICKY NAVBAR — FIXED + CLEAN */
+/* =============================== */
+.frame-56 {
+  width: 100%;
+  height: 60px;
+  background: #061730;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+  margin: 0;
+  box-sizing: border-box;
+
+  /* ✅ Make navbar sticky */
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/* =============================== */
+/* 🔥 LOGO */
+/* =============================== */
+.logo-text {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+/* =============================== */
+/* 🔥 NAV LINKS */
+/* =============================== */
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #dce3eb;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: white;
+  font-weight: 600;
+  border-bottom: 3px solid #f5c518;
+  padding-bottom: 3px;
+}
+
+/* =============================== */
+/* 🔥 USER SECTION */
+/* =============================== */
+.navbar-user-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-user-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #b1c3d1;
+}
+
+/* =============================== */
+/* 🔥 PROFILE BUTTON */
+/* =============================== */
+.profile-button {
+  background: #0d6efd;
+  padding: 6px 14px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* =============================== */
+/* 🔥 LOGOUT BUTTON */
+/* =============================== */
+.login-button {
+  background: #ff4c4c;
+  padding: 6px 18px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,110 @@
+/* Admin container */
+.admin-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+/* FORM */
+.admin-form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+.btn-save {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-save:hover {
+  background: #0956c2;
+}
+
+/* LIST */
+.admin-table {
+  margin-top: 20px;
+}
+
+.activity-row {
+  display: flex;
+  background: white;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.thumb {
+  width: 90px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.info {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit {
+  padding: 8px 12px;
+  background: #ffc107;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  padding: 8px 12px;
+  background: #dc3545;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #b02a37;
+}

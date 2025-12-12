@@ -1,0 +1,85 @@
+/* Background full page */
+.contact-page {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7ff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card */
+.contact-card {
+  width: 440px;
+  background: white;
+  padding: 35px 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.contact-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #12163a;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+.form-label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #12163a;
+}
+
+/* Input */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  background: #fafafa;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #12163a;
+}
+
+/* Textarea */
+.form-textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* Button */
+.form-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b1033;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s ease;
+}
+
+.form-button:hover {
+  background-color: #070a25;
+}

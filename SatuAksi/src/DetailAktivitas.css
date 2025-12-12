@@ -1,0 +1,105 @@
+/* --- GLOBAL CONTAINER --- */
+.detail-activity-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto 50px auto;
+    padding: 0 20px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* --- HEADER TITLE + CATEGORY --- */
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.detail-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0A192F;
+    margin: 0;
+}
+
+.detail-category {
+    background: #9fffe0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #004d40;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* --- IMAGE --- */
+.detail-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    margin-bottom: 25px;
+}
+
+.detail-image {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- DESCRIPTION TEXT --- */
+.detail-description {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* --- INFO CARD --- */
+.detail-info-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px 28px;
+
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    margin-bottom: 35px;
+
+    font-size: 17px;
+    color: #222;
+    line-height: 1.8;
+}
+
+.detail-info-card div {
+    margin-bottom: 6px;
+}
+
+/* --- CTA BUTTON --- */
+.detail-volunteer-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 14px 32px;
+
+    background: #FFC107;
+    color: #0A192F;
+    font-size: 18px;
+    font-weight: 700;
+
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+
+    transition: 0.25s ease;
+}
+
+.detail-volunteer-btn:hover {
+    background: #e5ad06;
+}
+
+/* --- LOADING & NOT FOUND --- */
+.detail-loading,
+.detail-notfound {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 20px;
+    color: #444;
+}
